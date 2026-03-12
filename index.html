@@ -4,69 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>봄동비빔조 랜딩페이지</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero fade-in">
-        <h1>🥗 팀 소개: 봄동비빔조</h1>
-        <blockquote>"애자일하게 비벼드리겠습니다"</blockquote>
-        <p>프로젝트의 맛과 영양, 그리고 혁신적인 식감까지 책임지는 팀입니다.</p>
-    </header>
+    <nav class="navbar">
+        <div class="logo">봄동비빔조</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section class="team-section fade-in">
-        <h2>🍱 팀 멤버 구성</h2>
+    <section id="hero" class="hero fade-in">
+        <h1>우리는 아이디어를 실행으로 바꾸는 팀입니다</h1>
+        <p class="sub-copy">기획, 실행, 협업을 통해 실제 문제를 해결하는 팀</p>
+        <a href="#team" class="btn">팀원 보기</a>
+        <div class="hero-image-wrapper">
+            <img src="애자일조.jpg" alt="팀 단체 사진" class="hero-img">
+        </div>
+    </section>
+
+    <section id="about" class="about-section fade-in">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p class="about-description">우리 팀은 김범수, 신채운, 엄주원으로 구성되어 있으며, 공감을 바탕으로 세상의 문제를 해결하는 것을 목표로 합니다.</p>
+            <h3>핵심 가치</h3>
+            <ul class="core-values">
+                <li>실행</li>
+                <li>협업</li>
+                <li>도전</li>
+                <li>책임감</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="why-us" class="why-us-section fade-in">
+        <h2>Why Us</h2>
+        <div class="strength-cards">
+            <div class="strength-card">
+                <h3>빠른 실행력</h3>
+            </div>
+            <div class="strength-card">
+                <h3>다양한 역량 조합</h3>
+            </div>
+            <div class="strength-card">
+                <h3>솔직한 피드백 문화</h3>
+            </div>
+            <div class="strength-card">
+                <h3>끝까지 해내는 추진력</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <h2>Team Members</h2>
         <div class="card-container">
-            <article class="member-card">
-                <div class="img-wrapper">
+            
+            <article class="member-card slide-in-left">
+                <div class="img-wrapper large-img">
                     <img src="범수참기름.jpg" alt="김범수" class="profile-img">
                 </div>
-                <h3>🍯 김범수</h3>
-                <ul class="info-list">
-                    <li>학과: 인공지능전공</li>
-                    <li>MBTI: ENFJ</li>
-                    <li>팀 역할: 참기름 (인사이트)</li>
-                </ul>
-                <div class="quote">
-                    <p>"방심하지 마세요. 제 인사이트 한 방울이면 프로젝트의 향미가 완전히 달라지니까요."</p>
+                <div class="member-info">
+                    <h3>🍯 김범수</h3>
+                    <ul class="info-list">
+                        <li>역할: 참기름 (인사이트)</li>
+                        <li>한 줄 소개: "방심하지 마세요. 제 인사이트 한 방울이면 프로젝트의 향미가 완전히 달라지니까요."</li>
+                    </ul>
+                    <div class="characteristics">
+                        <p>1. 또래상담병과 분대장 경험을 토대로 팀 내 갈등을 유연하게 중재하며 협업 시너지를 극대화하겠습니다.</p>
+                        <p>2. 선도부 활동으로 다진 책임감과 자기 통제력을 발휘하여 팀의 안정적인 프로젝트 환경을 구축하겠습니다.</p>
+                        <p>3. 마라톤 완주로 증명한 강인한 끈기와 실행력을 바탕으로 프로젝트의 완성도를 끝까지 책임지겠습니다.</p>
+                    </div>
                 </div>
             </article>
 
-            <article class="member-card">
-                <div class="img-wrapper">
+            <article class="member-card slide-in-right">
+                <div class="img-wrapper large-img">
                     <img src="채운밥.jpg" alt="신채운" class="profile-img">
                 </div>
-                <h3>🍚 신채운</h3>
-                <ul class="info-list">
-                    <li>학과: 인공지능전공</li>
-                    <li>MBTI: INFP</li>
-                    <li>팀 역할: 쌀밥 (로직 베이스)</li>
-                </ul>
-                <div class="quote">
-                    <p>"제가 없으면 이 프로젝트는 영양가 없는 고추장 범벅일 뿐입니다."</p>
+                <div class="member-info">
+                    <h3>🍚 신채운</h3>
+                    <ul class="info-list">
+                        <li>역할: 쌀밥 (로직 베이스)</li>
+                        <li>한 줄 소개: "제가 없으면 이 프로젝트는 영양가 없는 고추장 범벅일 뿐입니다."</li>
+                    </ul>
+                    <div class="characteristics">
+                        <p>1. 클라이밍 동아리 회장으로서 이견을 조율하며 리더십을 쌓았습니다. 객관적인 시각으로 문제를 파악해 조직 내 갈등을 원만히 해결하는 소통 역량을 갖추었습니다.</p>
+                        <p>2. AI 및 컴퓨터 비전 기술을 창업 아이템에 접목해 기술적 깊이를 더하겠습니다. 객체 인식 등 고도화된 인지 능력을 통해 비즈니스 가치를 창출하는 핵심 역할을 수행하겠습니다.</p>
+                        <p>3. 쌀밥처럼 변함없는 자세로 팀의 중심을 잡겠습니다. 어떤 변수에도 흔들림 없는 기반이 되어, 팀원들이 각자의 역량을 온전히 발휘할 수 있도록 조직을 아우르겠습니다.</p>
+                    </div>
                 </div>
             </article>
 
-            <article class="member-card">
-                <div class="img-wrapper">
+            <article class="member-card slide-in-left">
+                <div class="img-wrapper large-img">
                     <img src="주원봄동.jpg" alt="엄주원" class="profile-img">
                 </div>
-                <h3>🥬 엄주원</h3>
-                <ul class="info-list">
-                    <li>학과: 산업공학과</li>
-                    <li>MBTI: ISTJ</li>
-                    <li>팀 역할: 봄동 (기술적 시도)</li>
-                </ul>
-                <div class="quote">
-                    <p>"시스템이 너무 부드럽기만 하면 재미없죠. 제가 아삭하게 씹어드리겠습니다."</p>
+                <div class="member-info">
+                    <h3>🥬 엄주원</h3>
+                    <ul class="info-list">
+                        <li>역할: 봄동 (기술적 시도)</li>
+                        <li>한 줄 소개: "시스템이 너무 부드럽기만 하면 재미없죠. 제가 아삭하게 씹어드리겠습니다."</li>
+                    </ul>
+                    <div class="characteristics">
+                        <p>축구를 통해 실력이라는 한계 앞에서도 쉽게 흔들리지 않는 힘을 배웠고, 창업동아리에서는 다양한 의견 속에서도 방향을 잃지 않고 팀이 나아갈 길을 함께 고민하는 태도를 지녔습니다.</p>
+                        <p>겉으로는 차갑고 단단해 보일 수 있지만, 그런 점이 오히려 팀 안에서는 감정에 휩쓸리기보다 중심을 잡고 앞으로의 방향을 제시하는 강점입니다.</p>
+                        <p>봄동이 겨울을 견디며 속을 단단히 채워가듯, 팀 속에서도 묵묵히 흐름을 읽고 다음 방향을 분명하게 잡아주는 역할을 해낼 것입니다.</p>
+                    </div>
                 </div>
             </article>
         </div>
     </section>
 
-    <section class="advisor-section fade-in">
+    <section id="advisor" class="advisor-section fade-in">
         <h2>🌶️ 지도 교수님</h2>
         <div class="advisor-card">
-            <div class="img-wrapper">
+            <div class="img-wrapper large-img">
                 <img src="교수님고추장.jpg" alt="김남주 교수님" class="profile-img">
             </div>
             <div class="advisor-info">
@@ -89,11 +144,22 @@
         </div>
     </section>
 
+    <section id="contact" class="contact-section fade-in">
+        <h2>Contact</h2>
+        <p class="contact-msg">우리 팀이 궁금하다면 편하게 연락해주세요</p>
+        <ul class="email-list">
+            <li>김범수 : 연락처 비공개</li>
+            <li>신채운 : 연락처 비공개</li>
+            <li>엄주원 : 연락처 비공개</li>
+        </ul>
+    </section>
+
     <footer class="footer fade-in">
         <h2>맛있게 비벼질 우리를 기대해주세요!!!</h2>
         <div class="footer-img-wrapper">
             <img src="비빔밥짤.jpg" alt="비빔밥" class="footer-img">
         </div>
+        <p>봄동비빔조</p>
     </footer>
 
     <script src="script.js"></script>

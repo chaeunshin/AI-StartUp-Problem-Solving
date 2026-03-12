@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    const fadeElements = document.querySelectorAll('.fade-in');
-    fadeElements.forEach(el => observer.observe(el));
+    const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+    animatedElements.forEach(el => observer.observe(el));
 });
