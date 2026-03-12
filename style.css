@@ -399,7 +399,6 @@ h2 {
     display: block;
 }
 
-/* Scroll Animation Classes */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -421,4 +420,57 @@ h2 {
 .fade-in.visible, .slide-in-left.visible, .slide-in-right.visible {
     opacity: 1;
     transform: translate(0, 0);
+}
+
+/* Ingredient Cards Styles */
+.ingredient-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.ingredient-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.ingredient-card:hover {
+    transform: translateY(-10px);
+}
+
+.ingredient-img-wrapper {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredient-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ingredient-card h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.ingredient-card p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
 }
